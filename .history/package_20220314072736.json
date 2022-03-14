@@ -1,12 +1,12 @@
 {
-    "name": "kemetmaat",
+    "name": "Groupomania",
     "version": "1.0.0",
     "description": "",
+    "main": "bin/www",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node ./bin/www "
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [
+    "start": node bin / www "keywords": [
         "server",
         "http",
         "api",
