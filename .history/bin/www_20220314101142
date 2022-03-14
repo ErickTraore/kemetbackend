@@ -116,4 +116,3 @@ function onListening() {
         'port ' + addr.port;
     debug('Listening on ' + bind);
 }
-console.log("Notre serveur est prêt: https://ikcadci.url:" + port);
