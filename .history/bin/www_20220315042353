@@ -1,9 +1,6 @@
 //imports
 var http = require('http');
 var hostname = '212.227.142.69'
-var port = 3000;
-
-
 var express = require('express');
 var bodyParser = require('body-parser');
 var apiRouter = require('../apiRouter').router;
@@ -38,7 +35,7 @@ server.get('/', function(req, res) {
 
 
 
-    res.setHeader('Content-Type', 'text/plain');
+    res.setHeader('Content-Type', 'text/html');
     res.status(200).send('<h1>Bonjour sur notre super server</h1>');
 
 });
@@ -47,7 +44,7 @@ server.get('/', function(req, res) {
 server.use('/api/', apiRouter);
 
 
-server.listen(port, hostname, () => {
+server.listen(port, function() {
     console.log("Notre serveur est prêt: http://localhost:" + port);
     // console.log("Notre serveur est prêt: https://ikcadci.url:" + port);
 });
